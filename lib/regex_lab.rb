@@ -1,8 +1,8 @@
 def starts_with_a_vowel?(word)
-  if word.scan(/^a/)
+  if word.scan(/\b(a)/)
     true
   else
-    nil
+    false
   end
 end
 
