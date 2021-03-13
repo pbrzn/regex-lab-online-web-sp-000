@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  !!word.scan(/\b[aeiou].+\b/)
+  !!word.scan(/\b[aeiou]\W+\b/)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
@@ -15,5 +15,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  !!phone.scan(/(\d{3})-(\d{3})-(\d{4})/)
+  !!phone.scan(/(\d{3}).(\d{3}).(\d{4})/)
 end
